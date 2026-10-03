@@ -6,5 +6,5 @@ const userSchema = new mongoose.Schema({
   role: { type: String, enum: ['student', 'lecturer'], required: true },
   fullName: { type: String, required: true }
 }, { timestamps: true });
-
+const User = mongoose.models.User || mongoose.model('User', userSchema);
 export default mongoose.model('User', userSchema);

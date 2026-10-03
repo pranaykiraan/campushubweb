@@ -1,4 +1,3 @@
-import User from '../models/User.js';
 import StudentProfile from '../models/StudentProfile.js';
 import LecturerProfile from '../models/LecturerProfile.js';
 import bcrypt from 'bcryptjs';
